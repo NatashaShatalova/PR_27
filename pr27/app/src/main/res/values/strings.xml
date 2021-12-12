@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Taxi</string>
+    <string name="login_txt">login</string>
+    <string name="password_txt">password</string>
+    <string name="sign_in_txt">SIGN IN</string>
+    <string name="forgot_password_txt">Forgot Password?</string>
+    <string name="create_a_new_account_txt">Create a new account?</string>
+    <string name="e_mail_txt">e-mail</string>
+    <string name="sign_up_txt">SIGN UP</string>
+    <string name="repeat_password_txt">repeat password</string>
+    <string name="name_head_menu_txt">Arkhipov Konstantin</string>
+    <string name="city_head_menu_txt">Novosibirsk</string>
+    <string name="nav_d_open">Open navigation drawer</string>
+    <string name="nav_d_close">Close navigation drawer</string>
+    <string name="history_act_head_txt">History</string>
+    <string name="settings_txt">Settings</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item>
+                <bitmap
+
+                    android:tint="#da000000"
+                    android:tintMode="src_atop"
+                    android:src="@drawable/_9581802cf946e2"
+
+                    />
+            </item>
+            <item>
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/image_8_"/>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

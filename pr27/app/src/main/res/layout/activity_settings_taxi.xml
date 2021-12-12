@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings_taxi"
+    android:background = "@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/blue_menu_head"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageViewMenuSettings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_txt"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBackgroundSettings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/i"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSetting">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_settings" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="60dp"
+            android:paddingTop="100dp"
+            android:paddingRight="60dp">
+
+            <TextView
+                android:id="@+id/textViewSettingsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:text="Arkhipov Konstantin"
+                android:textColor="@color/white"
+                android:textSize="30sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewSettingsTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSettingsName"
+                android:text="15 hours"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewSettingsTimeDrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSettingsTime"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Drive"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/textViewSettingsName"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@id/textViewSettingsTime"
+                android:background="@color/white">
+
+            </View>
+
+            <TextView
+                android:id="@+id/textViewSettingsCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSettingsName"
+                android:layout_marginLeft="140dp"
+                android:layout_toRightOf="@+id/textViewSettingsTime"
+                android:text="1512$"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewSettingsCostPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSettingsCost"
+                android:layout_alignLeft="@id/textViewSettingsCost"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Paid"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewSettingsEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSettingsCostPaid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="e-mail: konstkonst55@mail.ru"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewSettingsExit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/textViewSettingsEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Exit"
+                android:textColor="@color/white"
+                android:textSize="15sp">
+
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
